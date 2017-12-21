@@ -104,6 +104,16 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Themes
+PRODUCT_PACKAGES += \
+    DeepPurpleTheme \
+    IndigoTheme \
+    PinkTheme \
+    PurpleTheme \
+    RedTheme \
+    SkyBlueTheme \
+    YellowTheme 
+    
 # Extra tools in PixysOS
 PRODUCT_PACKAGES += \
     7z \
