@@ -104,15 +104,37 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# Themes
 PRODUCT_PACKAGES += \
-    DeepPurpleTheme \
-    IndigoTheme \
-    PinkTheme \
-    PurpleTheme \
-    RedTheme \
-    SkyBlueTheme \
-    YellowTheme 
+    AmberAccent \
+    BlackAccent \
+    BlueAccent \
+    BlueGreyAccent \
+    BrownAccent \
+    CyanAccent \
+    DeepOrangeAccent \
+    DeepPurpleAccent \
+    GreenAccent \
+    GreyAccent \
+    IndigoAccent \
+    LightBlueAccent \
+    LightGreenAccent \
+    LimeAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
+    TealAccent \
+    YellowAccent \
+    WhiteAccent
+
+# UI Variants
+PRODUCT_PACKAGES += \
+    SystemDarkTheme \
+    SettingsDarkTheme \
+    SystemBlackTheme \
+    SettingsBlackTheme \
+    SystemExtendedTheme \
+    SettingsExtendedTheme
     
 # Extra tools in PixysOS
 PRODUCT_PACKAGES += \
@@ -192,5 +214,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/pixys/overlay/common
 -include vendor/pixys/config/partner_gms.mk
 
 include vendor/pixys/config/pixys_main.mk
+include vendor/pixys/config/pixys_props.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
